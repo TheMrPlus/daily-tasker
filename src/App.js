@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Navbar from "./components/Navbar"
+import InputArea from "./components/InputArea"
+import TasksArea from "./components/TasksArea"
+import {connect} from "react-redux"
+import Footer from "./components/Footer"
+import ProgressArea from "./components/ProgressArea"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+   return <div>
+      <div>
+         <Navbar/>
+      </div>
+      <div className="input-area">
+         <InputArea/>
+      </div>
+      <div >
+         <TasksArea/>
+      </div>
+      <div>
+         <ProgressArea/>
+      </div>
+      <Footer></Footer>
+   </div>
 }
 
-export default App;
+const mapStateToProps = (state) => {
+   return state 
+}
+
+export default connect(mapStateToProps)(App)

@@ -1,0 +1,26 @@
+.progress-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.progress {
+  height: 40vh;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+}
+
+.progress-title {
+  padding-top: 2vh;
+  font-family: "Cinzel", serif;
+}
+
+@media (max-width: 1100px) {
+  .progress-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .progress {
+    height: 50vh;
+  }
+}

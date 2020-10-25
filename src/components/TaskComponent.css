@@ -1,0 +1,28 @@
+.task-component {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.second-block {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  letter-spacing: 7px;
+}
+
+.div-number {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+.task-span {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+@media (max-width: 1000px) {
+  .second-block {
+    letter-spacing: 3px;
+  }
+}

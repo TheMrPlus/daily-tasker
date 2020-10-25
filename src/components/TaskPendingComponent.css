@@ -1,0 +1,71 @@
+.task-pending-component {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border-bottom: 3px solid #ff416c;
+  color: #ffffff;
+}
+
+.pending-divider {
+  border-top: 3px solid #ff416c;
+  border-bottom: none;
+}
+.first-block-pending {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.second-block-pending {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  letter-spacing: 7px;
+}
+.third-block-pending {
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+.div-number-pending {
+  text-align: center;
+  font-size: 4rem;
+  color: #ff416c;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+.task-pending-span {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  color: #ff416c;
+}
+
+@media (max-width: 1000px) {
+  .second-block-pending {
+    letter-spacing: 3px;
+  }
+  .first-block-pending {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .second-block-pending {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    letter-spacing: 7px;
+  }
+  .third-block-pending {
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+  .task-pending-component {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 3px solid #ff416c;
+    color: #ffffff;
+  }
+  .div-number-pending {
+    font-size: 3rem;
+  }
+  .task-pending-span {
+    font-size: 1rem;
+  }
+  .reg-pending-text {
+    font-size: 1rem;
+  }
+}
